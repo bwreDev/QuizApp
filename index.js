@@ -1,4 +1,5 @@
-/*const STATE = {
+/* Worked with mentor on JS before turning in wireframe.
+const STATE = {
     page: "#start-page",
     currentQuestion: 0,
     score: 0,
