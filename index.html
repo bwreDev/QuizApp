@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,19 +9,29 @@
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="index.js"></script>
-    <link rel="stylesheet" href="style.css"/> 
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
     <header>
-        
+
     </header>
-    <main>
+    <main role="main" class="container">
         <section id="start-page">
             <h2>Start Page</h2>
             <button class="start-button"><span>Start</span></button>
         </section>
         <section id="question-page">
             <h2>Question Page</h2>
+            <ul>
+                <li class="question-area">Question:
+                    <span class="questionNumber">0</span>/10</li>
+                <li class="question-area">Score:
+                    <span class="score">0</span>
+                </li>
+            </ul>
+            <form class="multiple-choice-answers"></form>
             <button class="submit-answer-button"><span>Submit</span></button>
         </section>
         <section id="feedback">
@@ -33,4 +44,5 @@
         </section>
     </main>
 </body>
+
 </html>

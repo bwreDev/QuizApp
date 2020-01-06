@@ -1,4 +1,4 @@
-const STATE = {
+/*const STATE = {
     page: "#start-page",
     currentQuestion: 0,
     score: 0,
@@ -34,4 +34,4 @@ function main() {
     console.log("main ran");
 }
 $(main);
-
+*/
