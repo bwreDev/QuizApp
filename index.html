@@ -15,31 +15,53 @@
 
 <body>
     <header>
-
+        
     </header>
     <main role="main" class="container">
         <section id="start-page">
-            <h2>Start Page</h2>
-            <button class="start-button"><span>Start</span></button>
+            <h2>Start Page<br>
+            Test your videogame knowledge!</h2>
+            <img src="Start-screen.jpg"/>
+            <button class="start-button"><span>Press Start</span></button>
         </section>
         <section id="question-page">
             <h2>Question Page</h2>
+            <img src="invaders-background.jpg">
             <ul>
-                <li class="question-area">Question:
+                <li class="question-area-number">Question:
                     <span class="questionNumber">0</span>/10</li>
-                <li class="question-area">Score:
-                    <span class="score">0</span>
+                <li class="question-area-score">Score:
+                    <span class="score">0</span>/10
+                </li>
+                <li class="question-seat">
+                    <p>Question fills into here!</p>
                 </li>
             </ul>
-            <form class="multiple-choice-answers"></form>
+            <form class="multiple-choice-answers">
+                <input type="radio" name="answer" value="a">A.<br>
+                <input type="radio" name="answer" value="b">B.<br>
+                <input type="radio" name="answer" value="c">C.<br>
+                <input type="radio" name="answer" value="d">D.<br>
+            </form>
             <button class="submit-answer-button"><span>Submit</span></button>
         </section>
         <section id="feedback">
             <h2>Feedback</h2>
+            <p>If answer is correct: Congrats!</p>
+            <p>If answer is wrong: Sorry! Here is the correct answer:</p>
             <button class="next-question-button"><span>Next Question</span></button>
         </section>
         <section id="score-page">
             <h2>Score Page</h2>
+            <img src="game-over.png"/>
+            <p>Heres how you did!
+            </p>
+                <ul>
+                    <li>
+                    Score: 0/10
+                </li>
+            </ul>
+
             <button class="return-to-start-button"><span>Return to Start</span></button>
         </section>
     </main>

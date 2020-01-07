@@ -7,6 +7,7 @@
 body {
     font-family: 'Press Start 2P', cursive;
     text-transform: uppercase;
+    background-color: gray;
 }
 
 section {
@@ -14,17 +15,32 @@ section {
     flex-direction: column;
     text-align: center;
     padding: 100px;
+    border: 2px solid black;
 }
 
 ul {
     list-style: none;
 }
 
+.question-area {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+}
+
 button {
+    font-family: 'Press Start 2P', cursive;
+    text-transform: uppercase;
     margin-left: auto;
     margin-right: auto;
     height: 20px;
     cursor: pointer;
     background-color: black;
     color: white;
+}
+
+header {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
 }
