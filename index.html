@@ -15,54 +15,48 @@
 
 <body>
     <header>
-        
+
     </header>
     <main class="container">
         <section id="start-page">
-            <h2>Start Page<br>
-            Test your videogame knowledge!</h2>
-            <img alt="start screen background" src="Start-screen.jpg"/>
+            <h2>Test your video game knowledge!</h2>
             <button class="start-button"><span>Press Start</span></button>
         </section>
         <section id="question-page">
-            <h2>Question Page</h2>
-            <img alt="question page background" src="invaders-background.jpg">
-            <ul>
+
+            <ul class="score-question-counters">
                 <li class="question-area-number">Question:
-                    <span class="questionNumber">0</span>/10</li>
+                    <span class="questionNumberCounter">0</span>/10</li>
                 <li class="question-area-score">Score:
-                    <span class="score">0</span>/10
-                </li>
-                <li class="question-seat">
-                    <p>Question fills into here!</p>
+                    <span class="scoreCounter">0</span>/10
                 </li>
             </ul>
+            <h2 id="question-title"></h2>
             <form class="multiple-choice-answers">
-                <input type="radio" name="answer" value="a">A.<br>
-                <input type="radio" name="answer" value="b">B.<br>
-                <input type="radio" name="answer" value="c">C.<br>
-                <input type="radio" name="answer" value="d">D.<br>
+                <input type="radio" name="answer" value="0" required><label id="labelOne"></label><br>
+                <input type="radio" name="answer" value="1" required><label id="labelTwo"></label><br>
+                <input type="radio" name="answer" value="2" required><label id="labelThree"></label><br>
+                <input type="radio" name="answer" value="3" required><label id="labelFour"></label><br>
+                <button class="submit-answer-button"><span>Submit</span></button>
             </form>
-            <button class="submit-answer-button"><span>Submit</span></button>
         </section>
-        <section id="feedback">
+        <section id="feedback-page">
             <h2>Feedback</h2>
-            <p>If answer is correct: Congrats!</p>
-            <p>If answer is wrong: Sorry! Here is the correct answer:</p>
+            <p class="correct-answer">Congrats! You got it right!</p>
+            <p class="wrong-answer">Sorry! The correct answer is: <span class="trueAnswer"></span></p>
             <button class="next-question-button"><span>Next Question</span></button>
         </section>
         <section id="score-page">
             <h2>Score Page</h2>
-            <img alt="score page background" src="game-over.png"/>
-            <p>Heres how you did!
-            </p>
-                <ul>
-                    <li>
-                    Score: 0/10
+            <p>Heres how you did!</p>
+            <ul>
+                <li class="question-area-score">Score:
+                    <span class="scoreCounter">0</span>/10
+
                 </li>
             </ul>
 
-            <button class="return-to-start-button"><span>Return to Start</span></button>
+            <button class="start-button"><span>Return to Start</span></button>
         </section>
     </main>
 </body>

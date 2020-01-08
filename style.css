@@ -1,21 +1,56 @@
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 50px; 
+    box-sizing: border-box; 
 }
 
 body {
     font-family: 'Press Start 2P', cursive;
+    margin: 0;
+    padding: 0;
     text-transform: uppercase;
     background-color: gray;
 }
+
+#start-page, #question-page, #score-page, #feedback-page {
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+
+#start-page {
+    background-image: url("Start-screen.jpg");
+}
+
+#question-page {
+    background-image: url("invaders-background.jpg");
+    text-shadow: 2px 2px green;
+}
+
+#score-page {
+    background-image: url("game-over.png");
+}
+
+#feedback-page {
+    background-image: url("feedback-image.jpg");
+}
+
+#question-title, .multiple-choice-answers, .score-question-counters {
+    background-color: black;
+    padding: 10px;
+}
+
+.score-question-counters {
+    text-align: right;
+}
+
 
 section {
     display: flex;
     flex-direction: column;
     text-align: center;
-    padding: 100px;
+    padding: 500px;
     border: 2px solid black;
+    color: white;
+    text-shadow: 2px 2px black;
 }
 
 ul {
@@ -43,4 +78,8 @@ header {
     display: flex;
     text-align: center;
     flex-direction: column;
+}
+
+p {
+    padding: 100px;
 }
