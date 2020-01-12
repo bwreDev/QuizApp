@@ -72,8 +72,8 @@ h2 {
 }
 
 .start-page-header {
-    margin-top: 175px;
-    margin-bottom: 275px;
+    margin-top: 100px;
+    margin-bottom: 380px;
 }
 
 button {
@@ -86,7 +86,7 @@ button {
     cursor: pointer;
     background-color: black;
     color: white;
-    margin-bottom: 160px;
+    margin-bottom: 350px;
 }
 
 p {
@@ -106,7 +106,7 @@ p {
 
 .next-question-button {
     margin-top: 150px;
-    margin-bottom: 300px;
+    margin-bottom: 500px;
 }
 
 @media screen and (min-width: 750px) {
@@ -126,12 +126,12 @@ p {
 
     .start-page-header {
         margin-bottom: 250px;
-        margin-top: 125px;
+        margin-top: 150px;
     }
 
     form {
         margin-top: 100px;
-        margin-bottom: 350px;
+        margin-bottom: 150px;
     }
 
     .start-button {
@@ -149,12 +149,12 @@ p {
 
     .start-page-header {
         margin-top: 100px;
-        margin-bottom: 400px;
+        margin-bottom: 300px;
     }
 
     form {
         margin-top: 50px;
-        margin-bottom: 300px;
+        margin-bottom: 50px;
     }
 
     .next-question-button {
@@ -164,5 +164,9 @@ p {
 
     .start-button {
         margin-bottom: 250px;
+    }
+
+    .final-score {
+        margin-bottom: 200px;
     }
 }
