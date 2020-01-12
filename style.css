@@ -19,7 +19,6 @@ body {
 
 #start-page {
     background-image: url("Start-screen.jpg"); 
-    padding: 5em;
 }
 
 #question-page {
@@ -47,11 +46,13 @@ section {
 
 ul {
     list-style: none;
+    padding: 0;
 }
 
 form {
     text-align: center;
-    margin-bottom: 150px;
+    margin-top: 100px;
+    margin-bottom: 100px;
 }
 
 input {
@@ -63,13 +64,16 @@ input {
     flex-direction: column;
 }
 
-h2, .final-score{
+h2 {
     margin-top: 50px;
+    margin-bottom: 50px;
     text-align: center;
+
 }
 
 .start-page-header {
-    margin-top: 100px;
+    margin-top: 175px;
+    margin-bottom: 275px;
 }
 
 button {
@@ -82,26 +86,83 @@ button {
     cursor: pointer;
     background-color: black;
     color: white;
-    margin-bottom: 100px;
-}
-
-.start-button {
-    margin-top: 150px;
+    margin-bottom: 160px;
 }
 
 p {
     text-align: center;
-    padding: 50px;
     font-size: 100%;
-    margin-bottom: 100px;
+}
+
+.final-score {
+    margin-bottom: 350px;
+    text-align: center;
+}
+
+.correct-answer, .wrong-answer {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.next-question-button {
+    margin-top: 150px;
+    margin-bottom: 300px;
 }
 
 @media screen and (min-width: 750px) {
     .next-question-button {
-        margin-top: 25px;
+        margin-top: 300px;
+        margin-bottom: 300px;
     }
 
-    button {
-        margin-bottom: 1000px;
+    .correct-answer, .wrong-answer {
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
+
+    .final-score {
+        margin-bottom: 300px;
+    }
+
+    .start-page-header {
+        margin-bottom: 250px;
+        margin-top: 125px;
+    }
+
+    form {
+        margin-top: 100px;
+        margin-bottom: 350px;
+    }
+
+    .start-button {
+        margin-top: 100px;
+        margin-bottom: 350px;
+
+    }
+}
+
+@media screen and (min-width: 1500px) {
+    section {
+        padding: 100px;
+        font-size: 200%;
+    }
+
+    .start-page-header {
+        margin-top: 100px;
+        margin-bottom: 400px;
+    }
+
+    form {
+        margin-top: 50px;
+        margin-bottom: 300px;
+    }
+
+    .next-question-button {
+        margin-bottom: 250px;
+        margin-top: 250px;
+    }
+
+    .start-button {
+        margin-bottom: 250px;
     }
 }
