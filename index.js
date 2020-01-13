@@ -95,7 +95,13 @@ function bindEvents() {
         render();
     });
     $("main").on("click", ".next-question-button", e => {
-        STATE.page = "#question-page";
+        if (STATE.currentQuestion < 9) {
+            STATE.page = "#question-page";
+
+        }
+        else {
+            STATE.page = "#score-page"
+        }
         STATE.currentQuestion++;
         render();
     });
@@ -110,13 +116,7 @@ function bindEvents() {
         else {
             STATE.correct = false;
         }
-        if (STATE.currentQuestion < 9) {
-            STATE.page = "#feedback-page";
-
-        }
-        else {
-            STATE.page = "#score-page"
-        }
+        STATE.page = "#feedback-page"
         e.target.reset()
         render();
     })
