@@ -26,6 +26,7 @@ img {
 
 #question-page {
     background-image: url("invaders-background.jpg");
+    background-size: cover;
     text-shadow: 5px 5px black;
 }
 
@@ -45,6 +46,7 @@ img {
 .score-question-counters {
     text-align: right;
     line-height: 20px;
+    margin-top: 20px;
 }
 
 section {
@@ -251,6 +253,10 @@ form input {
     input[type='radio'] {
         transform: scale(2);
         margin-right: 50px;
+    }
+
+    .score-question-counters {
+        margin-top: 50px;
     }
 }
 
