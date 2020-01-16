@@ -107,7 +107,6 @@ function bindEvents() {
     });
     $("main").on("submit", "form", e => {
         e.preventDefault();
-        console.log(e.target.answer.value);
         const question = STATE.questions[STATE.currentQuestion];
         if (question.correct == e.target.answer.value) {
             STATE.correct = true;
@@ -125,6 +124,5 @@ function bindEvents() {
 function main() {
     bindEvents();
     render();
-    console.log("main ran");
 }
 $(main);
