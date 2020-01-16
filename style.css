@@ -4,44 +4,56 @@
 
 body {
     font-family: 'Press Start 2P', cursive;
-    font-size: 75%;
-    margin: 0;
     text-transform: uppercase;
+    padding: 0;
+    margin: 0;
 }
 
-#start-page, #question-page, #score-page, #feedback-page {
-    display: flex;
-    flex-direction: column;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: 100% 100% ;
+#start-page, #score-page {
+   background-color: black;
 }
 
-#start-page {
-    background-image: url("Start-screen.jpg"); 
+img {
+    max-width: 512px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.trueAnswer {
+    text-decoration: underline solid black;
+    background-color: black;
 }
 
 #question-page {
     background-image: url("invaders-background.jpg");
-    text-shadow: 2px 2px green;
-}
-
-#score-page {
-    background-image: url("game-over.png");
+    text-shadow: 5px 5px black;
 }
 
 #feedback-page {
     background-image: url("feedback-image.jpg");
 }
 
+#question-page, #feedback-page {
+    background-size: cover;
+}
+
+#question-title {
+    line-height: 30px;
+    text-align: left;
+}
+
 .score-question-counters {
     text-align: right;
+    line-height: 20px;
 }
 
 section {
+    display: flex;
+    flex-direction: column;
     color: white;
-    text-shadow: 2px 2px black;
-    padding: 40px;
+    text-shadow: 4px 4px black;
+    padding: 20px;
+    min-height: 568px;
 }
 
 ul {
@@ -50,30 +62,34 @@ ul {
 }
 
 form {
-    text-align: center;
-    margin-top: 100px;
-    margin-bottom: 100px;
+    justify-content: left;
+    line-height: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+form label input{
+    display: inline;
 }
 
 input {
-    margin: 8px;
-}
-
-.question-area {
-    display: flex;
-    flex-direction: column;
+    margin: 10px;
 }
 
 h2 {
-    margin-top: 50px;
+    margin-top: 0px;
     margin-bottom: 50px;
     text-align: center;
-
+    line-height: 30px;
 }
 
-.start-page-header {
-    margin-top: 100px;
-    margin-bottom: 380px;
+.feedback-text {
+    margin-top: 50px;
+}
+
+p {
+    text-align: center;
+    line-height: 50px;
 }
 
 button {
@@ -86,17 +102,20 @@ button {
     cursor: pointer;
     background-color: black;
     color: white;
-    margin-bottom: 350px;
 }
 
-p {
-    text-align: center;
-    font-size: 100%;
+button:hover {
+    height: 60px;
+}
+
+form input {
+    cursor: pointer;
 }
 
 .final-score {
-    margin-bottom: 350px;
     text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 .correct-answer, .wrong-answer {
@@ -106,67 +125,138 @@ p {
 
 .next-question-button {
     margin-top: 150px;
-    margin-bottom: 500px;
+    box-shadow: 5px 5px black;
 }
 
-@media screen and (min-width: 750px) {
-    .next-question-button {
-        margin-top: 300px;
-        margin-bottom: 300px;
-    }
+.start-page-header {
+    margin-top: 50px;
+}
 
-    .correct-answer, .wrong-answer {
-        margin-top: 100px;
-        margin-bottom: 100px;
-    }
+.score-page-title {
+    margin-top: 50px;
+}
 
-    .final-score {
-        margin-bottom: 300px;
-    }
-
-    .start-page-header {
-        margin-bottom: 250px;
-        margin-top: 150px;
+@media screen and (min-width: 300px) {
+    section {
+        font-size: 75%
     }
 
     form {
-        margin-top: 100px;
-        margin-bottom: 150px;
+        font-size: 15px;
     }
 
-    .start-button {
-        margin-top: 100px;
-        margin-bottom: 350px;
-
+    .submit-answer-button {
+        margin-top: 10px;
     }
 }
 
-@media screen and (min-width: 1500px) {
+@media screen and (min-height: 600px) {
     section {
-        padding: 100px;
-        font-size: 200%;
+        min-height: 640px;
+    }
+
+    .start-page-header {
+        margin-top: 75px;
+    }
+}
+
+@media screen and (min-height: 650px) {
+    section {
+        min-height: 667px;
+    }
+
+    .start-page-header {
+        margin-top: 50px;
+    }
+}
+
+@media screen and (min-height: 700px) {
+    section {
+        min-height: 736px;
+    }
+
+    .start-page-header {
+        margin-top: 75px;
+    }
+
+    .submit-answer-button {
+        margin-top: 20px;
+    }
+}
+
+@media screen and (min-height: 800px) {
+    section {
+        min-height: 812px;
     }
 
     .start-page-header {
         margin-top: 100px;
-        margin-bottom: 300px;
+    }
+}
+
+@media screen and (min-width: 750px) {
+    section {
+        min-height: 1024px;
+    }
+
+    .start-page-header {
+        margin-top: 150px;
+    }
+
+    .score-page-title {
+        margin-top: 150px;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    section {
+        font-size: 100%;
+        min-height: 1080px;
+    }
+
+    .start-page-header {
+        margin-top: 250px;
+        line-height: 150px;
+    }
+
+    #question-title {
+        line-height: 100px;
     }
 
     form {
         margin-top: 50px;
         margin-bottom: 50px;
+        font-size: 100%;
+        line-height: 50px;
     }
 
     .next-question-button {
-        margin-bottom: 250px;
         margin-top: 250px;
-    }
-
-    .start-button {
-        margin-bottom: 250px;
     }
 
     .final-score {
         margin-bottom: 200px;
+    }
+
+    .score-question-counters {
+        line-height: 65px;
+    }
+}
+
+@media screen and (min-width: 1800px) {
+    form {
+        font-size: 200%;
+    }
+
+    input[type='radio'] {
+        transform: scale(2);
+        margin-right: 50px;
+    }
+}
+
+@media screen and (min-width: 2000px) {
+    section {
+        min-height: 2500px;
+        font-size: 300%;
     }
 }

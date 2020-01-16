@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Colton's Quiz</title>
+    <title>Video Game Quiz</title>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="index.js"></script>
@@ -20,6 +20,7 @@
     <main>
         <section id="start-page">
             <h2 class="start-page-header">Test your video game knowledge!</h2>
+            <img alt="controller icon" src="controller.png"/>
             <button class="start-button"><span>Press Start</span></button>
         </section>
         <section id="question-page">
@@ -31,23 +32,26 @@
                     <span class="scoreCounter">0</span>/10
                 </li>
             </ul>
-            <h2 id="question-title"></h2>
-            <form class="multiple-choice-answers">
-                <input type="radio" name="answer" value="0" required><label id="labelOne"></label><br>
-                <input type="radio" name="answer" value="1" required><label id="labelTwo"></label><br>
-                <input type="radio" name="answer" value="2" required><label id="labelThree"></label><br>
-                <input type="radio" name="answer" value="3" required><label id="labelFour"></label><br>
+            <h2 id="question-title" aria-live="polite">""</h2>
+            <form class="multiple-choice-answers" aria-live="polite">
+                <fieldset>
+                    <legend>Answers:</legend>
+                <input type="radio" name="answer" value="0" required><label id="labelOne">""</label><br>
+                <input type="radio" name="answer" value="1" required><label id="labelTwo">""</label><br>
+                <input type="radio" name="answer" value="2" required><label id="labelThree">""</label><br>
+                <input type="radio" name="answer" value="3" required><label id="labelFour">""</label><br>
                 <button class="submit-answer-button"><span>Submit</span></button>
+            </fieldset>
             </form>
         </section>
         <section id="feedback-page">
-            <h2>Feedback</h2>
+            <h2 class="feedback-text">Feedback</h2>
             <p class="correct-answer">Congrats! You got it right!</p>
             <p class="wrong-answer">Sorry! The correct answer is: <span class="trueAnswer"></span></p>
             <button class="next-question-button"><span>Next Question</span></button>
         </section>
         <section id="score-page">
-            <h2>Score Page</h2>
+            <h2 class="score-page-title">Score Page</h2>
             <p>Heres how you did!</p>
             <ul>
                 <li class="final-score" class="question-area-score">Score:
