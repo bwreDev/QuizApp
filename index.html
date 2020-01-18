@@ -32,9 +32,9 @@
                     <span class="scoreCounter">0</span>/10
                 </li>
             </ul>
-            <h2 id="question-title" aria-live="polite">""</h2>
             <form class="multiple-choice-answers" aria-live="polite">
                 <fieldset>
+                    <legend><h2 id="question-title" aria-live="polite">""</h2></legend>
                     <legend>Answers:</legend>
                 <input id="A" type="radio" name="answer" value="0" required><label for="A" id="labelOne">""</label><br>
                 <input id="B" type="radio" name="answer" value="1" required><label for="B" id="labelTwo">""</label><br>
@@ -45,6 +45,13 @@
             </form>
         </section>
         <section id="feedback-page">
+            <ul class="feedback-question-counters">
+                <li class="feedback-area-number">Question:
+                    <span class="questionNumberCounter">0</span>/10</li>
+                <li class="feedback-area-score">Score:
+                    <span class="scoreCounter">0</span>/10
+                </li>
+            </ul>
             <h2 class="feedback-text">Feedback</h2>
             <p class="correct-answer">Congrats! You got it right!</p>
             <p class="wrong-answer">Sorry! The correct answer is: <span class="trueAnswer"></span></p>

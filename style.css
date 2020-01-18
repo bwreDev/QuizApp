@@ -19,8 +19,12 @@ img {
     margin-right: auto;
 }
 
+input[type='radio'] {
+    transform: scale(2);
+}
+
 .trueAnswer {
-    text-decoration: underline solid black;
+    padding: 10px;
     background-color: black;
 }
 
@@ -41,9 +45,18 @@ img {
 #question-title {
     line-height: 30px;
     text-align: left;
+    background-color: black;
+    padding: 10px;
 }
 
 .score-question-counters {
+    text-align: right;
+    line-height: 20px;
+    margin-top: 20px;
+    background-color: black;
+}
+
+.feedback-question-counters {
     text-align: right;
     line-height: 20px;
     margin-top: 20px;
@@ -68,6 +81,7 @@ form {
     line-height: 30px;
     margin-left: auto;
     margin-right: auto;
+    background-color: black;
 }
 
 form label input{
@@ -222,7 +236,7 @@ form input {
     }
 
     #question-title {
-        line-height: 100px;
+        line-height: 50px;
     }
 
     form {
@@ -241,7 +255,7 @@ form input {
     }
 
     .score-question-counters {
-        line-height: 65px;
+        line-height: 50px;
     }
 }
 
